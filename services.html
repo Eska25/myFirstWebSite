@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="desciption" content="My professional web site">
-	<meta name="keywords" name="web design , html5 ,css3">
-	<meta name="author" name="Oleh Pavliv"> 
+	<meta name="keywords" content="web design , html5 ,css3">
+	<meta name="author" content="Oleh Pavliv"> 
 	<title>Acme Web Design | Services</title>
 	<link rel="stylesheet" href="styles/main.css">
 </head>
@@ -28,20 +28,22 @@
 	</header>	
 	<!--/header-->
 
-	
-
+	<!--newsletter-->
 	<section id="newsletter">
 		<div class="container">
 			<h1>Subscribe To Our newsletter</h1>
 			<form action="#" method="post">
-				<input type="email" placeholder="Enter email...">
+				<input type="email" placeholder="Enter email..." name="email">
 				<button type="submit" class="button_1">Subscribe</button>
 			</form>
 		</div>
 	</section>
+	<!--/newsletter-->
 
+	<!--main-->
 	<section id="main">
 		<div class="container">
+			<!--main-col-->
 			<article id="main-col">
 				<h1 class="page-title">Services</h1>
 				<ul id="services">
@@ -61,28 +63,33 @@
 					</li>
 				</ul>
 			</article>	
+			<!--/main-col-->
+
+			<!--sidebar-->
 			<aside id="sidebar">
 				<div class="dark">
 					<h3>Get a quote</h3>
 					<form action="#" method="POST" class="quote">
 						<div>
 							<label>Name:</label><br>
-							<input type="text" placeholder="Name">
+							<input type="text" placeholder="Name" name="name">
 						</div>
 						<div>
 							<label>Email:</label><br>
-							<input type="email" placeholder="Email Address">
+							<input type="email" placeholder="Email Address" name="email">
 						</div>
 						<div>
 							<label>Message</label><br>
-							<textarea placeholder="Message"></textarea>
+							<textarea placeholder="Message" name="msg"></textarea>
 						</div>
 						<button class="button_1" type="submit">Send</button>
 					</form>
 				</div>
 			</aside>
+			<!--/sidebar-->
 		</div>
 	</section>
+	<!--/main-->
 
 	<!--footer-->
 	<footer id="footer">
